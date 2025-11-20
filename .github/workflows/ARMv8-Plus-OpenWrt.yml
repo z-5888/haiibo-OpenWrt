@@ -192,7 +192,7 @@ jobs:
         body: |
           **This is Temporary Firmware for Armvirt 64**
           ### 📒 固件信息
-          - 🚀 成品固件点击此处跳转➦[PLUS](https://github.com/haiibo/OpenWrt/releases/tag/ARMv8_PLUS)即可下载
+          - 🚀 成品固件点击此处跳转➦[PLUS](https://github.com/z-5888/haiibo-OpenWrt/releases/tag/ARMv8_PLUS)即可下载
           - 💻 平台架构: ${{ env.DEVICE_TARGET }}-${{ env.DEVICE_SUBTARGET }} (多功能临时固件)
           - ⚽ 固件源码: ${{ env.REPO_URL }}
           - 💝 源码分支: ${{ env.REPO_BRANCH }}
