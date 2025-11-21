@@ -34,6 +34,13 @@ git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-a
 
 # 科学上网插件
 git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
+
+# 应用 shadowsocksr-libev 补丁
+if [ -d "$GITHUB_WORKSPACE/package/luci-app-ssr-plus/shadowsocksr-libev/patches" ]; then
+    mkdir -p package/luci-app-ssr-plus/shadowsocksr-libev/patches
+    cp -f $GITHUB_WORKSPACE/package/luci-app-ssr-plus/shadowsocksr-libev/patches/*.patch package/luci-app-ssr-plus/shadowsocksr-libev/patches/ 2>/dev/null || true
+fi
+
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
